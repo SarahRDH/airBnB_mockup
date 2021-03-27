@@ -1,0 +1,335 @@
+/*If I had unlimited time and had better planning initially, I would have included the "city-description bars" in the same card as each city. As a result, I hacked my way around it and used visibility:hidden for my media query so it would at least look good.*/
+
+body {
+  font-family: "Nunito", Arial, sans-serif;
+  font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  max-width: 100%;
+}
+
+header img {
+  max-width: 8%;
+  min-width: 100px;
+  padding-left: 25px;
+}
+
+nav {
+  display: flex;
+  padding-right: 20px;
+}
+
+nav p {
+  padding: 5px 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 480px) {
+  nav p {
+    padding: 5px 5px 10px 5px;
+    font-size: 15px;
+  }
+}
+
+/*banner section*/
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 630px;
+  width: auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 75px;
+  line-height: 50px;
+}
+@media only screen and (max-width: 480px) {
+  h1 {
+    font-size: 50px;
+  }
+  .banner p {
+    font-size: 15px;
+  }
+}
+
+.banner p {
+  font-size: 18px;
+  font-weight: 700;
+  width: 60%;
+  text-align: center;
+}
+
+/*locals love and complain section*/
+
+.locals {
+  background-color: #efefef;
+  display: flex;
+  padding: 35px 10px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.locals-love,
+.locals-complain {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #c1c1c1c1;
+  max-width: 50%;
+  margin: 10px 20px 10px 3px;
+}
+
+.locals-love p,
+.locals-complain p {
+  width: 80%;
+  align-self: flex-end;
+  line-height: 18px;
+  font-size: 14px;
+}
+
+.locals-love img,
+.locals-complain img {
+  max-width: 70px;
+  padding: 10px;
+}
+
+.locals-love h3,
+.locals-complain h3 {
+  display: flex;
+  background-color: #d7d7d7;
+  justify-content: flex-start;
+  padding: 15px;
+}
+
+.locals-love-content,
+.locals-complain-content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 5px 20px 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  .locals-love-content,
+  .locals-complain-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .locals-love p,
+  .locals-complain p {
+    align-self: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .locals {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/*neighborhoods section*/
+
+.neighborhoods {
+  height: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 30px 10px 30px;
+}
+
+.neighborhoods h2 {
+  font-size: 35px;
+  line-height: 30px;
+  margin-top: 50px;
+}
+
+.neighborhoods p {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 0px;
+}
+
+.neighborhoods h3 {
+  font-size: 28px;
+}
+
+.three {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .three {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .city-descriptions {
+    visibility: hidden;
+  }
+  .neighborhoods {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+    text-align: center;
+  }
+
+  .fitzroy,
+  .st-kilda,
+  .central-business-district {
+    height: 30%;
+    min-width: 80%;
+    text-align: center;
+  }
+}
+
+.fitzroy {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 33%;
+  border: 1px solid #c1c1c1c1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.st-kilda {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c1c1c1c1;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.central-business-district {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 33%;
+  border: 1px solid #c1c1c1c1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.city-descriptions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.bar {
+  background-color: #efefef;
+  margin: 0px 10px;
+  color: black;
+  height: 90px;
+  width: 33%;
+  border: 1px solid #c1c1c1c1;
+}
+
+.city-descriptions p {
+  font-size: 13px;
+  font-weight: 400;
+  padding: 20px 10px 0px 10px;
+}
+
+footer {
+  background-color: rgb(43, 45, 46);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding: 45px 0px;
+}
+
+hr {
+  border: none;
+  border-bottom: 3px solid gray;
+  border-radius: 10px;
+  width: 95%;
+  color: gray;
+}
+
+footer p {
+  padding-top: 25px;
+  font-size: 13px;
+}
+
+/*button button who's got the button*/
+
+button {
+  background-color: #ff5358;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 3px;
+  border-style: none;
+  border-bottom: 3px solid #e00007;
+  padding: 12px 60px 11px;
+}
+
+button:hover {
+  background-color: #e00007;
+}
+
+.neighborhoods button {
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
