@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Airbnb | Melbourne</title>
+  <link href="https://fonts.googleapis.com/css?family=Nunito:400,700,900" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/logo.png" alt="Air bnb logo" />
+    <nav>
+      <p>Sign Up</p>
+      <p>Login</p>
+    </nav>
+  </header>
+  <div class="banner">
+    <h1>Melbourne</h1>
+    <p>From footy to fashion, the cultural capital of Australia dares to stay on the cutting edge.</p>
+    <button>Find a neighborhood</button>
+  </div>
+  <div class="locals">
+    <div class="locals-love">
+      <h3>Locals Love</h3>
+      <div class="locals-love-content">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/heart.png" alt="heart" />
+        <p>Tourists mispronouncing Melbourne (it's mel-bin), crowded trains & trams, ticket inspectors, unpredictable weather, the price of real estate, Sydney</p>
+      </div>
+    </div>
+    <div class="locals-complain">
+      <h3>Locals Complain About</h3>
+      <div class="locals-complain-content">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/chat.png" alt="text bubble" />
+        <p>Coffee, talking about coffee, brunch, footy in winter, cricket in summer, laneways & hidden bars, street art & buskers, debating which side of the river is better</p>
+      </div>
+    </div>
+  </div>
+  <div class="neighborhoods">
+    <h2>Featured Neighborhoods</h2>
+    <p>Explore 19 Melbourne neighborhoods. Which are right for you?</p>
+    <div class="three">
+      <div class="fitzroy">
+        <h3>Fitzroy</h3>
+        <p>Baristas, Beards, Bikes.</p>
+      </div>
+      <div class="st-kilda">
+        <h3>St Kilda</h3>
+        <p>Backpackers and packed sand.</p>
+      </div>
+      <div class="central-business-district">
+        <h3>Central Business District</h3>
+        <p>Big business. Little laneways.</p>
+      </div>
+    </div>
+    <div class="city-descriptions">
+      <p class="bar">Hip Terrace Houses Anything Goes Vintage Clothing</p>
+      <p class="bar">Cake Shops Backpackers Hippies Beach Culture</p>
+      <p class="bar">Coffee Culture Working Nine To Five Federation Square Flinders Street Station</p>
+    </div>
+    <button>Find a neighborhood</button>
+  </div>
+  <footer>
+    <hr>
+    <p>© Airbnb, Inc.</p>
+  </footer>
+</body>
+
+</html>
