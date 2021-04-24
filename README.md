@@ -1,2 +1,2 @@
 # airBnB_mockup
-Practicing flex-box and responsive design. HTML and CSS
+Practicing flex-box and responsive design. Built from scratch with HTML and CSS to replicate the design mockup.
